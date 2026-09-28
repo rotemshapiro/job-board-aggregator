@@ -1,0 +1,37 @@
+# Companies to scan. A name is usually enough: the agent probes the supported ATS
+# providers, detects which one the company uses, and caches it in data/ats_cache.json.
+#
+# Override the detection when needed:
+#   - name: Example
+#     slugs: [example-inc]     # identifier as it appears in the job board URL
+#     ats: greenhouse          # greenhouse | lever | ashby | smartrecruiters |
+#                              # workable | recruitee | bamboohr
+#
+# Comeet boards need two values found in the careers page source:
+#   - name: Example
+#     ats: comeet
+#     uid: "AB.123"
+#     token: "XXXXXXXX"
+#
+# Workday boards need the tenant URL:
+#   - name: Example
+#     ats: workday
+#     host: example.wd5.myworkdayjobs.com
+#     tenant: example
+#     site: External
+#     search: Israel
+
+companies:
+  - name: Melio
+  - name: Riskified
+  - name: Payoneer
+  - name: Fireblocks
+  - name: Lemonade
+  - name: Wiz
+  - name: JFrog
+  - name: Taboola
+  - name: AppsFlyer
+  - name: Similarweb
+  - name: Gong
+  - name: Datadog
+  - name: Snowflake

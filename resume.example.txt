@@ -1,0 +1,23 @@
+Jane Doe - Product Manager
+
+SUMMARY
+Product manager with ~10 years in enterprise software, focused on platform and
+integration products in regulated industries.
+
+EXPERIENCE
+Acme Bank, 2019 - Present
+- Owned the product roadmap for a business banking portal across three teams.
+- Defined API specifications for integrations with core banking systems.
+- Automated manual workflows, cutting processing time significantly.
+
+Globex, 2015 - 2019
+- Led ERP implementations end to end: analysis, configuration, training, go-live.
+
+EDUCATION
+MBA, Business Management & Information Systems
+B.A., Computer Science & Economics
+
+SKILLS
+Product: roadmap, discovery, backlog prioritization, user stories, KPIs, Agile
+Technical: REST/SOAP APIs, SQL, integrations, microservices
+Tools: Jira, Confluence, Figma

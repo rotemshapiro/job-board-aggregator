@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------------------
+# Example configuration - replace the profiles with your own.
+# Every posting is matched against each profile whose title rules it satisfies.
+# ---------------------------------------------------------------------------
+
+profiles:
+  - name: "Product Manager"
+    resume_file: resume.example.txt
+    min_score: 70
+    preferences: |
+      Product manager with ~10 years in enterprise software.
+      Strongest fit: B2B, fintech, platform and integration products; roles where
+      a technical background is an advantage.
+      Less relevant: consumer/gaming products, product marketing, product design.
+    title_include: ["product manager", "product owner", "product lead"]
+    title_exclude: [junior, intern, student, "product marketing", "product designer",
+                    "product support", "vp ", chief, "head of", sales]
+
+  - name: "Technical Program Manager"
+    resume_file: resume.example.txt
+    min_score: 70
+    preferences: |
+      Technical program manager leading cross-functional software programs and
+      enterprise platform integrations. Comfortable with APIs, release processes
+      and regulated environments.
+    title_include: ["program manager", "technical program", "delivery manager",
+                    "project manager", "pmo", "release manager", "product delivery"]
+    title_exclude: [junior, intern, student, "program coordinator", "marketing program",
+                    construction, "vp ", chief, "head of", "customer success"]
+
+filters:
+  locations: ["tel aviv", herzliya, "ramat gan", "petah tikva", raanana, "kfar saba",
+              netanya, rehovot, "central district"]
+  include_generic_israel: true   # keep postings whose location is just "Israel"
+  include_remote: false          # set true to keep remote postings
+  senior_keywords: [senior, staff, principal, lead, director]
+
+scoring:
+  enabled: false                 # false = no LLM calls; the filtered list is sent as-is
+  model: claude-haiku-4-5-20251001
+  min_score: 70
+  max_jobs_per_run: 150
+
+discovery:
+  serpapi_queries: ["product manager", "technical program manager"]
+  serpapi_location: "Tel Aviv-Yafo, Israel"
